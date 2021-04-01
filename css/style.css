@@ -5,6 +5,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
+    max-height: 100%;
 }
 
 body{
@@ -113,6 +114,7 @@ body{
     margin-top: 4%;
     padding-top: 2%;
     padding-bottom: 2%;
+    max-height: 100%;
 }
 .grid-list{
     display: inline-block;
@@ -410,3 +412,136 @@ td{
     padding: 4% 0;
 }
 
+@media only screen and (max-width: 600px){
+
+    body{
+        display: block;
+        margin:0;
+        padding:0;
+    }
+    .container,.logo,.tagline-, .navbar, .welcome-sect{
+        display: block;
+        clear: both;
+    }
+
+    header{
+        padding-bottom: 4%;
+    }
+
+    .tagline-wrap{
+        width:100%;
+    }
+
+    .tagline{
+        float:left;
+    }
+
+    .container{
+        padding: 0 5%;
+    }
+
+    .logo{
+        float:left;
+        width: 50%;
+        font-size: 1.7em;
+    }
+
+    .nav-list, .navbar{
+        float: left;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .navbar li{
+        padding: 1% 5px;
+        font-size: 0.8em;
+        float: left;
+    }
+
+    .welcome-sect{
+        text-align: left;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .welcome-sect h2{
+        font-size: 1.4em;
+    }
+
+    .welcome-sect h4{
+        line-height: 1.5;
+        font-size: 0.9em;
+    }
+
+    .register-btn{
+        font-size: 0.9em;
+    }
+
+    .grid-list{
+        display: block;
+        clear: both;
+        background-color: #fff;  
+        padding-top:5%;
+     }
+
+    .col-1-3{
+        width: 100%;
+        margin-bottom: 7%;
+    }
+
+    .row{
+        display: block;
+        clear: both;
+        height: 155vh;
+        padding-top: 10%;
+        padding-bottom: 100%;
+    }
+
+    .img-bg1, .img-bg2, .img-bg3{
+        width: 100%;
+    }
+
+    .grid-list h4{
+        font-size: 1.8em;
+        margin-bottom: 8%;
+    }
+
+    .col-2-3{
+        display: block;
+        width: 100%;
+    }
+
+    .white-bg{
+        padding-left: 7%;
+        padding-bottom: 7%;
+    }
+
+    .white-bg p{
+        width: 95%;
+    }
+
+    .speaker-info{
+        width: 100%;
+        display: block;
+        margin-bottom: 10%;
+    }
+
+    .speaker-brief img{
+        height: 140px;
+    }
+
+    .main-form{
+        width: 100%;
+        background-color: #ffff;
+    }
+
+    .group{
+        clear: none;
+    }
+    .form-sect{
+        height: 120vh;
+    }
+
+    #select-input{
+        margin-top: 6%;
+    }
+} 
